@@ -11,14 +11,19 @@ func CityList(contents []byte) engine.ParserResult {
 	re := regexp.MustCompile(cityListRe)
 	matches := re.FindAllSubmatch(contents, -1)
 	result := engine.ParserResult{}
+	limit := 3
 	for _, match := range matches {
 		// 	保存城市名称
 		result.Items = append(result.Items, string(match[2]))
 		// 保存接下来需要处理的url已经对应的解析器
 		result.Requests = append(result.Requests, engine.Request{
 			Url:       string(match[1]),
-			ParserFun: engine.NilParser,
+			ParserFun: city,
 		})
+		limit--
+		if limit == 0 {
+			break
+		}
 	}
 	return result
 }
