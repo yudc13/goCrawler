@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1688b7b-3863-4af7-8338-be7022ea0c56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/regexp_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine/engine.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine/types.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fetcher/fetcher.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhenai/parser/citylist.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
